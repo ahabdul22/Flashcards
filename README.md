@@ -8,7 +8,6 @@
 `TODO://` created a flash card with question on one side and answer on the other. Answer is displayed after the card is clicked. 
 
 ### App Walk-though
-`TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
 <img src="http://g.recordit.co/b4Thaj2GIc.gif" width=200><br>
 
