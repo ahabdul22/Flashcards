@@ -9,7 +9,7 @@
 
 ### App Walk-though
 
-<img src=https://recordit.co/7uGqw6OilD
+<img src= https://recordit.co/7uGqw6OilD
 
 ## Required
 - [x] User can open the creation screen
