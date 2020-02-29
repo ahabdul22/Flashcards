@@ -15,6 +15,7 @@
 		BB4B0DA223F78B55000F60EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B0DA023F78B55000F60EC /* LaunchScreen.storyboard */; };
 		BB4B0DAD23F78B55000F60EC /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B0DAC23F78B55000F60EC /* FlashcardsTests.swift */; };
 		BB4B0DB823F78B55000F60EC /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B0DB723F78B55000F60EC /* FlashcardsUITests.swift */; };
+		BB7371BC240ADF1F007C31A0 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7371BB240ADF1F007C31A0 /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BB4B0DB323F78B55000F60EC /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4B0DB723F78B55000F60EC /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		BB4B0DB923F78B55000F60EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB7371BB240ADF1F007C31A0 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				BB4B0D9723F78B4E000F60EC /* SceneDelegate.swift */,
 				BB4B0D9923F78B4E000F60EC /* ViewController.swift */,
 				BB4B0D9B23F78B4E000F60EC /* Main.storyboard */,
+				BB7371BB240ADF1F007C31A0 /* CreationViewController.swift */,
 				BB4B0D9E23F78B55000F60EC /* Assets.xcassets */,
 				BB4B0DA023F78B55000F60EC /* LaunchScreen.storyboard */,
 				BB4B0DA323F78B55000F60EC /* Info.plist */,
@@ -262,6 +265,7 @@
 				BB4B0D9A23F78B4E000F60EC /* ViewController.swift in Sources */,
 				BB4B0D9623F78B4E000F60EC /* AppDelegate.swift in Sources */,
 				BB4B0D9823F78B4E000F60EC /* SceneDelegate.swift in Sources */,
+				BB7371BC240ADF1F007C31A0 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
