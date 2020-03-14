@@ -36,9 +36,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
         
-        updateFlashcard(question: "What is the capital of Kentucky", answer: "Frankfort")
+        // read saved flashcards
+        readSavedFlashcards()
+        
+        // adding our initial flashcard if needed
+        if flashcards.count == 0 {
+            updateFlashcard(question: "What is the capital of Kentucky", answer: "Frankfort")
+        }
+        else {
+            updateLabels()
+            updateNextPrevButtons()
+        }
     }
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
@@ -54,7 +65,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func didTapOnPrev(_ sender: Any) {
-        currentIndex = currentIndex + 1
+        currentIndex = currentIndex - 1
         
         updateLabels()
         
@@ -95,6 +106,11 @@ class ViewController: UIViewController {
         
         // update lables
         updateLabels()
+        
+        saveAllFlashcardsToDisk()
+        
+        
+        
     }
     
     func updateLabels(){
@@ -106,6 +122,31 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func saveAllFlashcardsToDisk() {
+        
+        let dictionaryArray = flashcards.map { (card) -> [String: String] in
+            return ["question": card.question, "answer": card.answer]
+        }
+        
+        UserDefaults.standard.set(dictionaryArray, forKey: "flashcards")
+        
+        print("Flashcards saved to UserDefaults")
+    }
+    
+    func readSavedFlashcards(){
+        
+        if let dictionary = UserDefaults.standard.array(forKey: "flashcards") as? [[String: String]]{
+            
+            let savedCards = dictionary.map { dictionary -> Flashcard in
+                return Flashcard(question: dictionary["question"]!, answer: dictionary["answer"]!)
+                
+            }
+            
+            flashcards.append(contentsOf: savedCards)
+        }
+    }
+    
     
 }
 
