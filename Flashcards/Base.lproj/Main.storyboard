@@ -51,6 +51,24 @@
                                     <segue destination="nFy-f2-hol" kind="presentation" id="nSG-b4-Xnc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xP9-n0-dv7">
+                                <rect key="frame" x="0.0" y="728" width="154" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4O-gW-aZE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2s-Ja-OiB">
+                                <rect key="frame" x="255" y="733" width="154" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0U-f8-fDQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +76,8 @@
                     <connections>
                         <outlet property="backLabel" destination="okZ-g5-2dj" id="8HJ-yG-2dI"/>
                         <outlet property="frontLabel" destination="rAN-hk-k1q" id="1hl-eE-3Qw"/>
+                        <outlet property="nextButton" destination="t2s-Ja-OiB" id="e6G-qG-W4h"/>
+                        <outlet property="prevButton" destination="xP9-n0-dv7" id="fbR-Ju-eZN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,7 +87,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-145" y="100"/>
+            <point key="canvasLocation" x="-146.37681159420291" y="99.776785714285708"/>
         </scene>
         <!--Creation View Controller-->
         <scene sceneID="srQ-t6-RRl">
