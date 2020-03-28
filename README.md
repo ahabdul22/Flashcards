@@ -1,6 +1,30 @@
 ## Flashcards
 
 📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
+## Lab 4
+
+### App Description
+`TODO://` added animations and styling to the app. Added icons and images for buttons. Added transitions from one card to the next and animation when toggling between question and answer.
+
+### App Walk-though
+`TODO://`
+
+<img src="http://g.recordit.co/nUz7Q9jhgO.gif" width=200><br>
+
+`TODO://`
+
+## Required
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
+- [x] Push code to GitHub
+## Optional
+- [ ] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [ ] User should see all views properly layout when using the app on a phone of different sizes
+- [ ] Correct answer in multiple choice should be random
+
 ## Lab 3
 
 ### App Description
